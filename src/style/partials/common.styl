@@ -1,0 +1,284 @@
+svg path,
+svg line,
+svg rect,
+svg polygon,
+svg circle
+    fill inherit !important
+    stroke inherit !important
+    stroke-width inherit !important
+
+.common
+    &__h1-heading
+        margin 0
+        font-family "ArnoPro"
+        font-size 76px
+        line-height 80px
+        font-weight 300
+        color black
+        @media tablet-portrait-small
+            font-size 60px
+            line-height 64px
+        @media phone
+            font-size 40px
+            line-height 44px
+
+        &--white
+            color white
+
+        &--large
+            font-size 96px
+            line-height 100px
+            @media laptop
+                font-size 80px
+                line-height 84px
+            @media tablet-portrait-small
+                font-size 60px
+                line-height 64px
+            @media phone
+                font-size 40px
+                line-height 44px
+
+    &__h2-heading
+        margin 0
+        font-family "ArnoPro"
+        font-size 60px
+        line-height 64px
+        font-weight 300
+        color black
+        @media tablet-portrait-small
+            font-size 48px
+            line-height 52px
+        @media phone
+            font-size 36px
+            line-height 40px
+
+        &--white
+            color white
+
+    &__description
+        & p:not([class])
+            margin 0
+            font-family "HelveticaNeue"
+            font-size 16px
+            line-height 26px
+            font-weight 300
+            color white
+            /*@media laptop
+                font-size 14px
+                line-height 24px*/
+
+        &--black
+            & p:not([class])
+                color black
+
+        & p:not([class]) + p:not([class])
+            margin 24px 0 0 0
+
+    &__button-link
+        display inline-block
+        padding 27px 60px 23px 60px
+        font-family "ArnoPro"
+        font-size 21px
+        line-height 27px
+        font-weight 300
+        color white
+        border none
+        background-color orange
+        text-decoration none
+        text-align center
+        outline none
+        cursor pointer
+        transition background-color .3s 0s ease
+        @media laptop
+            font-size 18px
+            line-height 24px
+        @media phone
+            padding 22px 50px 18px 50px
+
+        &:hover
+            background-color bright-orange
+
+        &--brown
+            background-color brown
+
+            &:hover
+                background-color bright-brown
+
+        &--brown + &--brown
+            border-left 1px solid gray-brown
+
+    &__arrow
+        position relative
+        font-family "ArnoPro"
+        font-size 21px
+        line-height 27px
+        font-weight 300
+        color white
+        opacity 1
+        visibility visible
+        outline none
+        cursor pointer
+        transition visibility 0s 0s ease, opacity .3s 0s ease
+        @media laptop
+            font-size 18px
+            line-height 24px
+
+        &--prev
+            padding 0 0 0 60px
+
+        &--next
+            padding 0 60px 0 0
+
+        &::after
+            content ""
+            position absolute
+            top 12px
+            display block
+            width 50px
+            height 1px
+            background-color rgba(255 255 255 .15)
+            transition width .3s 0s ease
+            @media laptop
+                top 11px
+
+        &--prev::after
+            right calc(100% - 50px)
+
+        &--next::after
+            left calc(100% - 50px)
+
+        &:hover::after
+            width 30px
+
+        &--black
+            color black
+
+            &::after
+                background-color rgba(0 0 0 .15)
+
+    &__wysiwyg
+        & h2:not([class]),
+        & h3:not([class])
+            margin 0
+            font-family "ArnoPro"
+            font-weight 300
+            color black
+
+        & h2:not([class])
+            margin 67px 0 17px 0
+            font-size 60px
+            line-height 64px
+            @media tablet-portrait-small
+                font-size 48px
+                line-height 52px
+            @media phone
+                font-size 36px
+                line-height 40px
+
+        & h3:not([class])
+            margin 66px 0 22px 0
+            font-size 46px
+            line-height 50px
+            @media tablet-portrait-small
+                font-size 36px
+                line-height 40px
+            @media phone
+                font-size 30px
+                line-height 34px
+        
+        & p:not([class])
+            margin 0
+            font-family "HelveticaNeue"
+            font-size 18px
+            line-height 28px
+            font-weight 300
+            color black
+            @media laptop
+                font-size 16px
+                line-height 26px
+
+        & div:not([class]) + p:not([class])
+        & img:not([class]) + p:not([class])
+            margin 31px 0 0 0
+
+        & ul:not([class]) + p:not([class]),
+        & p:not([class]) + p:not([class])
+            margin 24px 0 0 0
+
+        & img:not([class])
+            margin 0
+            display block
+            max-width 100%
+
+        & ul:not([class]) + img:not([class]),
+        & ol:not([class]) + img:not([class]),
+        & img:not([class]) + img:not([class]),
+        & div:not([class]) + img:not([class])
+        & p:not([class]) + img:not([class])
+            margin 30px 0 0 0
+
+        & ul:not([class])
+            margin 0
+            padding 0
+            list-style none
+
+            & li:not([class])
+                position relative
+                width calc(100% - 35px)
+                left 35px
+                font-family "HelveticaNeue"
+                font-size 18px
+                line-height 28px
+                font-weight 300
+                color black
+                @media laptop
+                    font-size 16px
+                    line-height 26px
+
+                &::before
+                    content ""
+                    position absolute
+                    top 14px
+                    left -35px
+                    display block
+                    width 25px
+                    height 1px
+                    background-color orange
+                    @media laptop
+                        top 13px
+
+        & p:not([class]) + ul:not([class])
+            margin 24px 0 0 0
+
+        & div:not([class])
+            margin 30px 0 0 0
+
+        & .table-scroller
+            width 100%
+            overflow-y auto
+
+        & table:not([class])
+            font-family "HelveticaNeue"
+            font-size 16px
+            line-height 22px
+            font-weight 300
+            color black
+            border-collapse collapse
+            text-align left
+            @media laptop
+                font-size 15px
+                line-height 21px
+
+        & th:not([class]),
+        & td:not([class])
+            padding 14px 25px 12px 25px
+            border 1px solid light-gray
+
+        & th:not([class])
+            font-weight 300
+
+.common__arrow.swiper-button-disabled
+    opacity 0
+    visibility hidden
+    transition opacity .3s 0s ease, visibility 0s .3s ease
+

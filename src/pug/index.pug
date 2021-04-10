@@ -1,0 +1,389 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1")
+        link(rel="stylesheet" href="style/normalize.css" type="text/css")
+        link(rel="stylesheet" href="style/swiper.css" type="text/css")
+        link(rel="stylesheet" href="style/choices.css" type="text/css")
+        link(rel="stylesheet" href="style/main.css" type="text/css")
+        title Чапаевские Бани
+    body.body
+        header.head.head--wide.js-head
+            div.head__bar
+                div.head__burger.js-burger
+                    div.head__burger-default
+                        div.head__burger-default-line
+                    div.head__burger-crossed
+                div.head__langs
+                    ul.head__langs-list
+                        li.head__langs-item
+                            a.head__langs-link(href="")
+                                |Eng
+                        li.head__langs-item
+                            a.head__langs-link(href="")
+                                |中文
+                div.head__logo
+                    div.logo
+                        a.logo__link(href="") 
+                            img.logo__sign-image(src="images/logo-sign.svg", alt="")
+                        img.logo__description-image(src="images/logo-description.svg", alt="")
+                div.head__contacts
+                    a.head__phone(href="tel:")
+                        |+7-343-247-21-07
+                    a.head__link(href="") 
+                        |Схема проезда
+            div.head__menu
+                nav.menu
+                    div.container
+                        div.menu__cols
+                            div.menu__col
+                                ul.menu__list
+                                    li.menu__item
+                                        a.menu__link(href="")
+                                            |Бани
+                                        ul.menu__submenu-list
+                                            li.menu__submenu-item
+                                                a.menu__submenu-link(href="")
+                                                    |Рыбацкая
+                                            li.menu__submenu-item
+                                                a.menu__submenu-link(href="")
+                                                    |Охотничья
+                                            li.menu__submenu-item
+                                                a.menu__submenu-link(href="")
+                                                    |Сибирская
+                                            li.menu__submenu-item
+                                                a.menu__submenu-link(href="")
+                                                    |Чапаевская
+                                            li.menu__submenu-item
+                                                a.menu__submenu-link(href="")
+                                                    |Купеческая
+                                            li.menu__submenu-item
+                                                a.menu__submenu-link(href="")
+                                                    |Боярская
+                                            li.menu__submenu-item
+                                                a.menu__submenu-link(href="")
+                                                    |Царская
+                                            li.menu__submenu-item
+                                                a.menu__submenu-link(href="")
+                                                    |Таежная
+                                    li.menu__item
+                                        a.menu__link(href="")
+                                            |Наши веники
+                                    li.menu__item
+                                        a.menu__link(href="")
+                                            |Подари баню
+                            div.menu__col
+                                ul.menu__list
+                                    li.menu__item
+                                        a.menu__link(href="")
+                                            |Мероприятия
+                                        ul.menu__submenu-list
+                                            li.menu__submenu-item
+                                                a.menu__submenu-link(href="")
+                                                    |Архив мероприятий
+                                            li.menu__submenu-item
+                                                a.menu__submenu-link(href="")
+                                                    |Социальные проекты
+                                    li.menu__item
+                                        a.menu__link(href="")
+                                            |События
+                                    li.menu__item
+                                        a.menu__link(href="")
+                                            |Услуги
+                                        ul.menu__submenu-list
+                                            li.menu__submenu-item
+                                                a.menu__submenu-link(href="")
+                                                    |Массаж
+                                            li.menu__submenu-item
+                                                a.menu__submenu-link(href="")
+                                                    |Спа-процедуры
+                                            li.menu__submenu-item
+                                                a.menu__submenu-link(href="")
+                                                    |Парения
+                                    li.menu__item
+                                        a.menu__link(href="")
+                                            |Органическая косметика
+                            div.menu__col
+                                div.menu__contacts
+                                    a.menu__phone(href="tel:")
+                                        |+7-343-247-21-07
+                                    span.menu__address
+                                        |Екатеринбург, 9 км. Сибирского тракта, ул. МОПРа, 1
+                                ul.menu__list
+                                    li.menu__item
+                                        a.menu__link(href="")
+                                            |Контакты
+                                    li.menu__item
+                                        a.menu__link(href="")
+                                            |Забронировать баню
+        main.main  
+            section.index-intro
+                video.index-intro__video(src="video/intro.mp4" autoplay muted loop) 
+                div.container
+                    div.index-intro__info
+                        h1.index-intro__heading.common__h1-heading.common__h1-heading--white
+                            |Настоящий рай для ценителей традиций и легкого пара!
+                        div.index-intro__description.common__description
+                            p
+                                |Уютные банные домики, оборудованные в лучших традициях русской бани, встречают посетителей ароматом натурального сруба, березовыми дровами, особой атмосферой исконного деревенского парения.
+                        div.index-intro__links
+                            a.common__button-link(href="")
+                                |Забронировать баню
+                            a.index-intro__events-link.common__button-link.common__button-link--brown(href="")
+                                |Календарь мероприятий
+            section.baths.baths--index
+                div.baths-slider.swiper-container.js-baths-slider
+                    div.baths-slider__arrows
+                        span.baths-slider__arrow.baths-slider__arrow--prev.common__arrow.common__arrow--prev.js-baths-slider-arrow-prev
+                            |Предыдущая
+                        span.baths-slider__arrow.baths-slider__arrow--next.common__arrow.common__arrow--next.js-baths-slider-arrow-next
+                            |Следующая
+                    div.baths-slider__drop-menu
+                        div.drop-menu
+                            span.drop-menu__hint
+                                |Все бани
+                            ul.drop-menu__list
+                                li.drop-menu__item
+                                    a.drop-menu__link(href="") 
+                                        |Рыбацкая
+                                li.drop-menu__item
+                                    a.drop-menu__link(href="") 
+                                        |Охотничья
+                                li.drop-menu__item
+                                    a.drop-menu__link(href="") 
+                                        |Сибирская
+                                li.drop-menu__item
+                                    a.drop-menu__link(href="") 
+                                        |Чапаевская
+                                li.drop-menu__item
+                                    a.drop-menu__link(href="") 
+                                        |Купеческая
+                                li.drop-menu__item
+                                    a.drop-menu__link(href="") 
+                                        |Боярская
+                                li.drop-menu__item
+                                    a.drop-menu__link(href="") 
+                                        |Царская
+                                li.drop-menu__item
+                                    a.drop-menu__link(href="") 
+                                        |Таежная
+                    ul.baths-slider__list.swiper-wrapper
+                        li.baths-slider__item.bath-slide.swiper-slide(data-href="rybatskaya")
+                            div.bath-slide__image-wrapper
+                                img.bath-slide__image(src="images/media/bath-01-image-01.jpg", alt="")
+                                div.bath-slide__image-curtain
+                            div.bath-slide__info
+                                h1.bath-slide__heading
+                                    a.bath-slide__link(href="")
+                                        |Рыбацкая
+                                span.bath-slide__capacity
+                                    |6 человек
+                                div.bath-slide__description.common__description
+                                    p
+                                        |Уютная баня, топится исключительно березовыми дровами. В бане иммется гостевая комната с обеденной зоной, теле-радио аппаратура, место для отдыха, парная, помывочная (в помывочной душевая кабина и обливное ведро), сан-узел. 
+                                div.bath-slide__prices
+                                    ul.bath-slide__prices-list
+                                        li.bath-slide__prices-item
+                                            span.bath-slide__prices-hint
+                                                |с 08:00 до 16:00
+                                            |от 1600 р/час
+                                        li.bath-slide__prices-item
+                                            span.bath-slide__prices-hint
+                                                |с 16:00 до 08:00
+                                            |от 2800 р/час
+                        li.baths-slider__item.bath-slide.swiper-slide(data-href="tsarskaya")
+                            div.bath-slide__image-wrapper
+                                img.bath-slide__image(src="images/media/bath-01-image-01.jpg", alt="")
+                                div.bath-slide__image-curtain
+                            div.bath-slide__info
+                                h1.bath-slide__heading
+                                    a.bath-slide__link(href="")
+                                        |Царская
+                                span.bath-slide__capacity
+                                    |20 человек
+                                div.bath-slide__description.common__description
+                                    p
+                                        |Большая двухэтажная VIP-баня с бассейном, топится исключительно березовыми дровами. На первом этаже уютная гостевая комната с камином, бассейн с ключевой водой, обеденная зона с теле-радио аппаратурой. Большая парная с соляной стеной, помывочная. На втором этаже расположены бильярдный стол (русский) и три комнаты отдыха с двуспальными кроватями.
+                                div.bath-slide__prices
+                                    ul.bath-slide__prices-list
+                                        li.bath-slide__prices-item
+                                            span.bath-slide__prices-hint
+                                                |с 08:00 до 16:00
+                                            |от 3500 р/час
+                                        li.bath-slide__prices-item
+                                            span.bath-slide__prices-hint
+                                                |с 16:00 до 08:00
+                                            |от 5900 р/час
+                    div.baths-slider__links
+                        a.common__button-link.js-dependent-href(href="")
+                            |Бронировать
+                        a.common__button-link.common__button-link--brown.baths-slider__details-link.js-dependent-href(href="")
+                            |Подробнее о бане
+                        a.common__button-link.common__button-link--brown.baths-slider__brooms-link(href="")
+                            |Наши веники
+            section.services
+                div.services__groups
+                    div.services__group
+                        div.services__group-image-wrapper
+                            img.services__group-image(src="images/services-preview.jpg", alt="")
+                        div.services__group-info
+                            h2.services__group-heading.common__h2-heading.common__h2-heading--white
+                                |Оздоровительные процедуры и косметика
+                            div.services__group-links
+                                a.services__group-link(href="")
+                                    |Массаж
+                                a.services__group-link(href="")
+                                    |Спа-процедуры
+                                a.services__group-link(href="")
+                                    |Парения
+                                a.services__group-link(href="")
+                                    |Органическая косметика
+                    div.services__group
+                        div.services__group-image-wrapper
+                            img.services__group-image(src="images/kitchen-preview.jpg", alt="")
+                        div.services__group-info
+                            h2.services__group-heading.common__h2-heading.common__h2-heading--white
+                                |Настоящая русская кухня
+                            div.services__group-description.common__description
+                                p 
+                                    |Из ресторана, расположенного в отеле Пале Рояль.
+                            div.services__group-links
+                                a.services__group-link(href="")
+                                    |Меню
+            section.about
+                div.advantages-slider.swiper-container.js-advantages-slider
+                    ul.advantages-slider__list.swiper-wrapper
+                        li.advantages-slider__item.advantage-slide.swiper-slide
+                            img.advantage-slide__image(src="images/media/advantage-slide-01.jpg", alt="")
+                            div.advantage-slide__info
+                                h1.advantage-slide__heading.common__h1-heading.common__h1-heading--white
+                                    |Богатая инфраструктура
+                                div.advantage-slide__description.common__description
+                                    p 
+                                        |Структуру комплекса составляют 11 уникальных построек, переступив порог которых легко очуиться в рыбацкой избушке, боярских палатах или просторных комнатах царского терема.
+                                    p
+                                        |Вокруг большая, благоустроенная и открытая для прогулок территория. Беседки, детская площадка, поляны для пикника на открытом воздухе.
+                        li.advantages-slider__item.advantage-slide.swiper-slide
+                            img.advantage-slide__image(src="images/media/advantage-slide-01.jpg", alt="")
+                            div.advantage-slide__info
+                                h1.advantage-slide__heading.common__h1-heading.common__h1-heading--white
+                                    |Богатая инфраструктура
+                                div.advantage-slide__description.common__description
+                                    p 
+                                        |Структуру комплекса составляют 11 уникальных построек, переступив порог которых легко очуиться в рыбацкой избушке, боярских палатах или просторных комнатах царского терема.
+                                    p
+                                        |Вокруг большая, благоустроенная и открытая для прогулок территория. Беседки, детская площадка, поляны для пикника на открытом воздухе.
+                    div.advantages-slider__arrows
+                        span.advantages-slider__arrow.common__arrow.common__arrow--prev.js-advantages-slider-arrow-prev
+                            |Назад
+                        span.advantages-slider__arrow.common__arrow.common__arrow--next.js-advantages-slider-arrow-next
+                            |Далее
+            section.events.events--index
+                div.events__photos
+                    div.events__photos-stripe.events__photos-stripe--01
+                    div.events__photos-stripe.events__photos-stripe--02
+                    div.events__photos-stripe.events__photos-stripe--03
+                div.container
+                    div.events__info
+                        h1.events__heading.common__h1-heading
+                            |Уникальные мероприятия и социальные проекты
+                        div.events__description.common__description.common__description--black
+                            p 
+                                |Мы ценим дружбу и общение, стараемся развивать семейные традиции. Организация уникальные мероприятия для всей самьи и участвуем в социальных проектах. Вы можете купить билет на любое мероприятие или заказать проведение своего.
+                        a.events__link.common__button-link(href="")
+                            |Календарь мероприятий
+                    div.events__slider-wrapper
+                        div.events__slider
+                            div.events-slider.swiper-container.js-events-slider
+                                ul.events-slider__list.swiper-wrapper
+                                    li.events-slider__item.swiper-slide
+                                        div.article-preview.article-preview--with-image
+                                            a.article-preview__link(href="")
+                                                img.article-preview__image(src="images/media/event-01-image-01.jpg", alt="")
+                                                div.article-preview__info
+                                                    span.article-preview__date
+                                                        |14/02
+                                                    span.article-preview__heading
+                                                        |Отмечаем день всех влюбленных
+                                    li.events-slider__item.swiper-slide
+                                        div.article-preview
+                                            a.article-preview__link(href="")
+                                                div.article-preview__info
+                                                    span.article-preview__date
+                                                        |22/02
+                                                    span.article-preview__heading
+                                                        |Провожаем зиму
+                                div.events-slider__arrows
+                                    span.events-slider__arrow.common__arrow.common__arrow--prev.common__arrow--black.js-events-slider-arrow-prev
+                                        |Назад
+                                    span.events-slider__arrow.common__arrow.common__arrow--next.common__arrow--black.js-events-slider-arrow-next
+                                        |Далее
+            section.gallery.gallery--index
+                div.container
+                    h2.gallery__heading.common__h2-heading
+                        |Фотографии с мероприятий в нашем Instagram
+                    ul.gallery__list
+                        li.gallery__item
+                            div.gallery__image-wrapper
+                                img.gallery__image(src="images/media/gallery-image-01.jpg", alt="")
+                        li.gallery__item
+                            div.gallery__image-wrapper
+                                img.gallery__image(src="images/media/gallery-image-02.jpg", alt="")
+                        li.gallery__item
+                            div.gallery__image-wrapper
+                                img.gallery__image(src="images/media/gallery-image-03.jpg", alt="")
+                        li.gallery__item
+                            div.gallery__image-wrapper
+                                img.gallery__image(src="images/media/gallery-image-04.jpg", alt="")
+                        li.gallery__item
+                            div.gallery__image-wrapper
+                                img.gallery__image(src="images/media/gallery-image-05.jpg", alt="")
+                        li.gallery__item
+                            div.gallery__image-wrapper
+                                img.gallery__image(src="images/media/gallery-image-06.jpg", alt="")
+                        li.gallery__item
+                            div.gallery__image-wrapper
+                                img.gallery__image(src="images/media/gallery-image-07.jpg", alt="")
+                        li.gallery__item
+                            div.gallery__image-wrapper
+                                img.gallery__image(src="images/media/gallery-image-08.jpg", alt="")
+                        li.gallery__item
+                            div.gallery__image-wrapper
+                                img.gallery__image(src="images/media/gallery-image-09.jpg", alt="")
+                        li.gallery__item
+                            div.gallery__image-wrapper
+                                img.gallery__image(src="images/media/gallery-image-10.jpg", alt="")
+                        li.gallery__item
+                            div.gallery__image-wrapper
+                                img.gallery__image(src="images/media/gallery-image-11.jpg", alt="")
+                        li.gallery__item
+                            div.gallery__image-wrapper
+                                img.gallery__image(src="images/media/gallery-image-12.jpg", alt="")
+                    //div.gallery__links
+                        a.gallery__link.common__button-link.common__button-link--brown(href="")
+                            img.gallery__link-icon(src="images/vkontakte-icon.svg", alt="")
+                        a.gallery__link.common__button-link.common__button-link--brown(href="")
+                            img.gallery__link-icon(src="images/facebook-icon.svg", alt="")
+                        a.gallery__link.common__button-link.common__button-link--brown(href="")
+                            img.gallery__link-icon(src="images/instagram-icon.svg", alt="")
+            section.contacts.contacts--index
+                div.container
+                    div.contacts__info
+                        h1.contacts__heading.common__h1-heading.common__h1-heading--white
+                            |Всего 15 минут от центра Екатеринбурга и 10 от аэропорта!
+                        div.contacts__description.common__description
+                            p
+                                |Комплекс «Чапаевские бани» расположен в Екатеринбурге на 9 километре Сибирского тракта на улице МОПРа, 1.
+                        a.contacts__phone(href="")
+                            |+7-343-247-21-07
+                        div.contacts__description.common__description
+                            p
+                                |Комплекс работает круглосуточно, без выходных и перерывов.
+                    div.contacts__map.js-map
+        //= partials/footer.pug
+        script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+        script(src="script/vendor.js" type="text/javascript")
+        script(src="script/script.js")
+
+

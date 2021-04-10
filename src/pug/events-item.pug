@@ -1,0 +1,48 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1")
+        link(rel="stylesheet" href="style/normalize.css" type="text/css")
+        link(rel="stylesheet" href="style/swiper.css" type="text/css")
+        link(rel="stylesheet" href="style/choices.css" type="text/css")
+        link(rel="stylesheet" href="style/main.css" type="text/css")
+        title Чапаевские Бани
+    body.body
+        //= partials/header.pug
+        main.main
+            section.inner-intro
+                div.container
+                    div.inner-intro__breadcrumbs
+                        div.breadcrumbs
+                            ul.breadcrumbs__list
+                                li.breadcrumbs__item
+                                    a.breadcrumbs__link(href="")
+                                        |Главная
+                                li.breadcrumbs__item
+                                    a.breadcrumbs__link(href="")
+                                        |Мероприятия
+                    h1.common__h1-heading.inner-intro__heading
+                        |Отмечаем день всех влюбленных
+                    span.inner-intro__date
+                        |14 февраля
+            section.article
+                div.container
+                    div.common__wysiwyg.article__wysiwyg
+                        p
+                            |Гостеприимный банно-оздоровительный комплекс, расположенный на 9 км. Сибирского тракта. Уютные банные домики, оборудованные в лучших традициях русской бани, встречают посетителей ароматом натурального сруба, березовыми дровами, особой атмосферой исконного деревенского парения. Структуру комплекса составляют 11 уникальных построек, переступив порог которых легко очутиться в рыбацкой избушке, боярских палатах или просторных комнатах царского терема. Настоящий рай для ценителей традиций и легкого пара!
+                        p
+                            |Русские бани в Екатеринбурге построены по всем традиционным правилам и канонам: помещения срубов имеют две части – предбанные покои и комнату для парилки. Гостей встречает уютный, стилизованный под старину интерьер, бревенчатая парная с каменной печью и мягким настилом из ароматного и пряного сена.
+                        p
+                            |Гостевые комнаты обставлены со славянским колоритом и включают все необходимое для комфортного времяпровождения отдыхающих.
+                    div.article__buy-ticket
+                        span.article__price
+                            |от 3500 р/чел
+                        a.common__button-link.article__buy-ticket-button(href="")
+                            |Купить билет
+
+
+        //= partials/footer.pug
+        script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+        script(src="script/vendor.js" type="text/javascript")
+        script(src="script/script.js")

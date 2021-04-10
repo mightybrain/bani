@@ -1,0 +1,50 @@
+.inner-intro
+    padding 95px 0 66px 0
+    text-align center
+
+    &--fullscreen
+        position relative
+        z-index 1
+        display flex
+        align-items flex-end
+        min-height 100vh
+        padding 0 0 75px 0
+        text-align left
+        @media tablet-landscape-medium
+            min-height calc(100vh - 140px)
+            padding 0 0 65px 0
+
+    &__breadcrumbs
+        display flex
+        justify-content center
+        margin 0 0 22px 0
+        @media phone
+            display none
+
+    &__capacity
+        display block
+        margin 20px 0 0 0
+        font-family "ArnoPro"
+        font-size 42px
+        line-height 46px
+        font-weight 300
+        color white
+        @media laptop
+            font-size 32px
+            line-height 36px
+
+    &__date
+        display block
+        margin 19px 0 0 0
+        font-family "ArnoPro"
+        font-size 36px
+        line-height 40px
+        font-weight 300
+        color black
+        @media laptop
+            font-size 32px
+            line-height 36px
+
+.inner-intro--fullscreen
+    & .inner-intro__breadcrumbs
+        justify-content flex-start

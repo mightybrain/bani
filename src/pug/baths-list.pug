@@ -1,0 +1,316 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1")
+        link(rel="stylesheet" href="style/normalize.css" type="text/css")
+        link(rel="stylesheet" href="style/swiper.css" type="text/css")
+        link(rel="stylesheet" href="style/choices.css" type="text/css")
+        link(rel="stylesheet" href="style/main.css" type="text/css")
+        title Чапаевские Бани
+    body.body.body--black
+        //= partials/header.pug
+        main.main
+            section.inner-intro
+                div.container
+                    div.inner-intro__breadcrumbs
+                        div.breadcrumbs
+                            ul.breadcrumbs__list
+                                li.breadcrumbs__item
+                                    a.breadcrumbs__link(href="")
+                                        |Главная
+                    h1.common__h1-heading.common__h1-heading--white.inner-intro__heading
+                        |Бани
+            section.baths.js-sticky-container
+                div.container
+                    aside.baths__sidebar.js-sticky
+                        span.baths__sidebar-hint
+                            |До 6 человек
+                        ul.baths__sidebar-list
+                            li.baths__sidebar-item
+                                button.baths__sidebar-button.js-scroll-button(data-target="rybatskaya")
+                                    |Рыбацкая
+                            li.baths__sidebar-item
+                                button.baths__sidebar-button.js-scroll-button(data-target="ohotnichya")
+                                    |Охотничья
+                        span.baths__sidebar-hint
+                            |До 8 человек
+                        ul.baths__sidebar-list
+                            li.baths__sidebar-item
+                                button.baths__sidebar-button.js-scroll-button(data-target="sibirskaya")
+                                    |Сибирская
+                        span.baths__sidebar-hint
+                            |До 10 человек
+                        ul.baths__sidebar-list
+                            li.baths__sidebar-item
+                                button.baths__sidebar-button.js-scroll-button(data-target="slavyanskaya")
+                                    |Славянская
+                            li.baths__sidebar-item
+                                button.baths__sidebar-button.js-scroll-button(data-target="chapaevskaya")
+                                    |Чапаевская
+                        span.baths__sidebar-hint
+                            |До 12 человек
+                        ul.baths__sidebar-list
+                            li.baths__sidebar-item
+                                button.baths__sidebar-button.js-scroll-button(data-target="kupecheskaya")
+                                    |Купеческая
+                            li.baths__sidebar-item
+                                button.baths__sidebar-button.js-scroll-button(data-target="boyarskaya")
+                                    |Боярская
+                        span.baths__sidebar-hint
+                            |До 20 человек
+                        ul.baths__sidebar-list
+                            li.baths__sidebar-item
+                                button.baths__sidebar-button.js-scroll-button(data-target="tsarskaya")
+                                    |Царская
+                            li.baths__sidebar-item
+                                button.baths__sidebar-button.js-scroll-button(data-target="taezhnaya")
+                                    |Таежная
+                    ul.baths__list
+                        li.baths__item(data-anchor="rybatskaya")
+                            div.bath-preview
+                                div.bath-preview__image-wrapper
+                                    a.bath-preview__image-link(href="")
+                                        img.bath-preview__image(src="images/media/bath-01-image-01.jpg", alt="")
+                                div.bath-preview__info
+                                    h2.common__h2-heading.common__h2-heading--white
+                                        a.bath-preview__link(href="")
+                                            |Рыбацкая
+                                    span.bath-preview__capacity
+                                        |до 6 человек
+                                    div.common__description.bath-preview__description
+                                        p
+                                            |Уютная баня, топится исключительно березовыми дровами. В бане иммется гостевая комната с обеденной зоной, теле-радио аппаратура, место для отдыха, парная, помывочная (в помывочной душевая кабина и обливное ведро), сан-узел. 
+                                div.bath-preview__reserve
+                                    div.bath-preview__prices
+                                        ul.bath-preview__prices-list
+                                            li.bath-preview__prices-item
+                                                span.bath-preview__prices-hint
+                                                    |с 08:00 до 16:00
+                                                |от 1600 р/час
+                                            li.bath-preview__prices-item
+                                                span.bath-preview__prices-hint
+                                                    |с 16:00 до 08:00
+                                                |от 2800 р/час  
+                                    a.common__button-link.bath-preview__reserve-button(href="")
+                                        |Бронировать
+                        li.baths__item(data-anchor="ohotnichya")
+                            div.bath-preview
+                                div.bath-preview__image-wrapper
+                                    a.bath-preview__image-link(href="")
+                                        img.bath-preview__image(src="images/media/bath-01-image-01.jpg", alt="")
+                                div.bath-preview__info
+                                    h2.common__h2-heading.common__h2-heading--white
+                                        a.bath-preview__link(href="")
+                                            |Охотничья
+                                    span.bath-preview__capacity
+                                        |до 6 человек
+                                    div.common__description.bath-preview__description
+                                        p
+                                            |Уютная баня, топится исключительно березовыми дровами. В бане иммется гостевая комната с обеденной зоной, теле-радио аппаратура, место для отдыха, парная, помывочная (в помывочной душевая кабина и обливное ведро), сан-узел. 
+                                div.bath-preview__reserve
+                                    div.bath-preview__prices
+                                        ul.bath-preview__prices-list
+                                            li.bath-preview__prices-item
+                                                span.bath-preview__prices-hint
+                                                    |с 08:00 до 16:00
+                                                |от 1600 р/час
+                                            li.bath-preview__prices-item
+                                                span.bath-preview__prices-hint
+                                                    |с 16:00 до 08:00
+                                                |от 2800 р/час  
+                                    a.common__button-link.bath-preview__reserve-button(href="")
+                                        |Бронировать                
+                        li.baths__item(data-anchor="sibirskaya")
+                            div.bath-preview
+                                div.bath-preview__image-wrapper
+                                    a.bath-preview__image-link(href="")
+                                        img.bath-preview__image(src="images/media/bath-01-image-01.jpg", alt="")
+                                div.bath-preview__info
+                                    h2.common__h2-heading.common__h2-heading--white
+                                        a.bath-preview__link(href="")
+                                            |Сибирская
+                                    span.bath-preview__capacity
+                                        |до 8 человек
+                                    div.common__description.bath-preview__description
+                                        p
+                                            |Уютная баня, топится исключительно березовыми дровами. В бане иммется гостевая комната с обеденной зоной, теле-радио аппаратура, место для отдыха, парная, помывочная (в помывочной душевая кабина и обливное ведро), сан-узел. 
+                                div.bath-preview__reserve
+                                    div.bath-preview__prices
+                                        ul.bath-preview__prices-list
+                                            li.bath-preview__prices-item
+                                                span.bath-preview__prices-hint
+                                                    |с 08:00 до 16:00
+                                                |от 1600 р/час
+                                            li.bath-preview__prices-item
+                                                span.bath-preview__prices-hint
+                                                    |с 16:00 до 08:00
+                                                |от 2800 р/час  
+                                    a.common__button-link.bath-preview__reserve-button(href="")
+                                        |Бронировать
+                        li.baths__item(data-anchor="slavyanskaya")
+                            div.bath-preview
+                                div.bath-preview__image-wrapper
+                                    a.bath-preview__image-link(href="")
+                                        img.bath-preview__image(src="images/media/bath-01-image-01.jpg", alt="")
+                                div.bath-preview__info
+                                    h2.common__h2-heading.common__h2-heading--white
+                                        a.bath-preview__link(href="")
+                                            |Славянская
+                                    span.bath-preview__capacity
+                                        |до 10 человек
+                                    div.common__description.bath-preview__description
+                                        p
+                                            |Уютная двухэтажная баня, топится исключительно березовыми дровами. На первом этаже расположены гостевая комната с обеденной зоной и теле-радио аппаратурой, комната отдыха с двуспальной кроватью, парная, помывочная и сан-узел. На втором этаже расположена просторная гостевая. Рядом с баней находится зона для барбекю.
+                                div.bath-preview__reserve
+                                    div.bath-preview__prices
+                                        ul.bath-preview__prices-list
+                                            li.bath-preview__prices-item
+                                                span.bath-preview__prices-hint
+                                                    |с 08:00 до 16:00
+                                                |от 2100 р/час
+                                            li.bath-preview__prices-item
+                                                span.bath-preview__prices-hint
+                                                    |с 16:00 до 08:00
+                                                |от 3900 р/час  
+                                    a.common__button-link.bath-preview__reserve-button(href="")
+                                        |Бронировать
+                        li.baths__item(data-anchor="chapaevskaya")
+                            div.bath-preview
+                                div.bath-preview__image-wrapper
+                                    a.bath-preview__image-link(href="")
+                                        img.bath-preview__image(src="images/media/bath-01-image-01.jpg", alt="")
+                                div.bath-preview__info
+                                    h2.common__h2-heading.common__h2-heading--white
+                                        a.bath-preview__link(href="")
+                                            |Чапаевская
+                                    span.bath-preview__capacity
+                                        |до 10 человек
+                                    div.common__description.bath-preview__description
+                                        p
+                                            |Уютная двухэтажная баня, топится исключительно березовыми дровами. На первом этаже расположены гостевая комната с обеденной зоной и теле-радио аппаратурой, комната отдыха с двуспальной кроватью, парная, помывочная и сан-узел. На втором этаже расположена просторная гостевая. Рядом с баней находится зона для барбекю.
+                                div.bath-preview__reserve
+                                    div.bath-preview__prices
+                                        ul.bath-preview__prices-list
+                                            li.bath-preview__prices-item
+                                                span.bath-preview__prices-hint
+                                                    |с 08:00 до 16:00
+                                                |от 2100 р/час
+                                            li.bath-preview__prices-item
+                                                span.bath-preview__prices-hint
+                                                    |с 16:00 до 08:00
+                                                |от 3900 р/час  
+                                    a.common__button-link.bath-preview__reserve-button(href="")
+                                        |Бронировать
+                        li.baths__item(data-anchor="kupecheskaya")
+                            div.bath-preview
+                                div.bath-preview__image-wrapper
+                                    a.bath-preview__image-link(href="")
+                                        img.bath-preview__image(src="images/media/bath-01-image-01.jpg", alt="")
+                                div.bath-preview__info
+                                    h2.common__h2-heading.common__h2-heading--white
+                                        a.bath-preview__link(href="")
+                                            |Купеческая
+                                    span.bath-preview__capacity
+                                        |до 12 человек
+                                    div.common__description.bath-preview__description
+                                        p
+                                            |Большая двухэтажная баня, топится исключительно березовыми дровами. На первом этаже расположены гостевая комната с обеденной зоной, камином и теле-радио аппаратурой, комната отдыха с двуспальной кроватью, парная, помывочная и сан-узел. На втором этаже расположены бильярдный стол (русский) и две комнаты отдыха с двуспальными кроватями. Рядом с баней находится зона для барбекю.
+                                div.bath-preview__reserve
+                                    div.bath-preview__prices
+                                        ul.bath-preview__prices-list
+                                            li.bath-preview__prices-item
+                                                span.bath-preview__prices-hint
+                                                    |с 08:00 до 16:00
+                                                |от 2500 р/час
+                                            li.bath-preview__prices-item
+                                                span.bath-preview__prices-hint
+                                                    |с 16:00 до 08:00
+                                                |от 4400 р/час  
+                                    a.common__button-link.bath-preview__reserve-button(href="")
+                                        |Бронировать
+                        li.baths__item(data-anchor="boyarskaya")
+                            div.bath-preview
+                                div.bath-preview__image-wrapper
+                                    a.bath-preview__image-link(href="")
+                                        img.bath-preview__image(src="images/media/bath-01-image-01.jpg", alt="")
+                                div.bath-preview__info
+                                    h2.common__h2-heading.common__h2-heading--white
+                                        a.bath-preview__link(href="")
+                                            |Боярская
+                                    span.bath-preview__capacity
+                                        |до 12 человек
+                                    div.common__description.bath-preview__description
+                                        p
+                                            |Большая двухэтажная баня, топится исключительно березовыми дровами. На первом этаже расположены гостевая комната с обеденной зоной, камином и теле-радио аппаратурой, комната отдыха с двуспальной кроватью, парная, помывочная и сан-узел. На втором этаже расположены бильярдный стол (русский) и две комнаты отдыха с двуспальными кроватями. Рядом с баней находится зона для барбекю. 
+                                div.bath-preview__reserve
+                                    div.bath-preview__prices
+                                        ul.bath-preview__prices-list
+                                            li.bath-preview__prices-item
+                                                span.bath-preview__prices-hint
+                                                    |с 08:00 до 16:00
+                                                |от 2500 р/час
+                                            li.bath-preview__prices-item
+                                                span.bath-preview__prices-hint
+                                                    |с 16:00 до 08:00
+                                                |от 4400 р/час  
+                                    a.common__button-link.bath-preview__reserve-button(href="")
+                                        |Бронировать
+                        li.baths__item(data-anchor="tsarskaya")
+                            div.bath-preview
+                                div.bath-preview__image-wrapper
+                                    a.bath-preview__image-link(href="")
+                                        img.bath-preview__image(src="images/media/bath-01-image-01.jpg", alt="")
+                                div.bath-preview__info
+                                    h2.common__h2-heading.common__h2-heading--white
+                                        a.bath-preview__link(href="")
+                                            |Царская
+                                    span.bath-preview__capacity
+                                        |до 20 человек
+                                    div.common__description.bath-preview__description
+                                        p
+                                            |Большая двухэтажная VIP-баня с бассейном, топится исключительно березовыми дровами. На первом этаже уютная гостевая комната с камином, бассейн с ключевой водой, обеденная зона с теле-радио аппаратурой. Большая парная с соляной стеной, помывочная. На втором этаже расположены бильярдный стол (русский) и три комнаты отдыха с двуспальными кроватями.
+                                div.bath-preview__reserve
+                                    div.bath-preview__prices
+                                        ul.bath-preview__prices-list
+                                            li.bath-preview__prices-item
+                                                span.bath-preview__prices-hint
+                                                    |с 08:00 до 16:00
+                                                |от 3500 р/час
+                                            li.bath-preview__prices-item
+                                                span.bath-preview__prices-hint
+                                                    |с 16:00 до 08:00
+                                                |от 5900 р/час  
+                                    a.common__button-link.bath-preview__reserve-button(href="")
+                                        |Бронировать
+                        li.baths__item(data-anchor="taezhnaya")
+                            div.bath-preview
+                                div.bath-preview__image-wrapper
+                                    a.bath-preview__image-link(href="")
+                                        img.bath-preview__image(src="images/media/bath-01-image-01.jpg", alt="")
+                                div.bath-preview__info
+                                    h2.common__h2-heading.common__h2-heading--white
+                                        a.bath-preview__link(href="")
+                                            |Таежная
+                                    span.bath-preview__capacity
+                                        |до 20 человек
+                                    div.common__description.bath-preview__description
+                                        p
+                                            |Большая двухэтажная VIP-баня с бассейном, топится исключительно березовыми дровами. На первом этаже уютная гостевая комната с камином, бассейн с ключевой водой, обеденная зона с теле-радио аппаратурой. Большая парная с соляной стеной, помывочная. На втором этаже расположены бильярдный стол (русский) и три комнаты отдыха с двуспальными кроватями. 
+                                div.bath-preview__reserve
+                                    div.bath-preview__prices
+                                        ul.bath-preview__prices-list
+                                            li.bath-preview__prices-item
+                                                span.bath-preview__prices-hint
+                                                    |с 08:00 до 16:00
+                                                |от 3500 р/час
+                                            li.bath-preview__prices-item
+                                                span.bath-preview__prices-hint
+                                                    |с 16:00 до 08:00
+                                                |от 5900 р/час  
+                                    a.common__button-link.bath-preview__reserve-button(href="")
+                                        |Бронировать
+        //= partials/footer.pug
+        script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+        script(src="script/vendor.js" type="text/javascript")
+        script(src="script/script.js")

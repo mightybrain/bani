@@ -1,0 +1,107 @@
+@font-face
+    font-family: "HelveticaNeue"
+    src: url("../fonts/helvetica-neue-roman.woff2") format("woff2")
+    font-weight: 300
+    font-style: normal
+
+@font-face
+    font-family: "ArnoPro"
+    src: url("../fonts/arno-pro-display.woff2") format("woff2")
+    font-weight: 300
+    font-style: normal
+
+
+@import "helpers/vars.styl"
+@import "partials/common.styl"
+@import "partials/animations.styl"
+
+*
+    box-sizing border-box
+
+.body
+    display flex
+    flex-direction column
+    min-height 100vh
+    background-color lightest-gray
+
+    &--black
+        background-color black
+
+.main
+    flex-grow 1
+    width calc(100% - 150px)
+    margin 0 0 0 auto
+    @media laptop
+        width calc(100% - 140px)
+    @media tablet-landscape-medium
+        width 100%
+        margin 0
+
+.container
+    width calc(100% - 280px)
+    max-width 1318px
+    margin 0 auto
+    @media desktop-medium
+        width calc(100% - 160px)
+    @media tablet-landscape-medium
+        width calc(100% - 80px)
+    @media tablet-portrait-large
+        width calc(100% - 60px)
+    @media phone
+        width calc(100% - 30px)
+
+.default
+    &--paddings
+        padding 0 0 107px 0
+
+.menu,
+.index-intro,
+.inner-intro--fullscreen,
+.gallery,
+.location,
+.contacts,
+.baths,
+.foot
+    & .container
+        max-width none
+
+.inner-intro:not(.inner-intro--fullscreen),
+.default,
+.article
+    & .container
+        max-width 1100px
+
+.events--index
+    & .container
+        width calc(100% - 140px)
+        max-width none
+        margin 0 0 0 auto
+        @media desktop-medium
+            width calc(100% - 80px)
+        @media tablet-landscape-medium
+            width calc(100% - 40px)
+        @media tablet-portrait-large
+            width calc(100% - 60px)
+            margin 0 auto
+        @media phone
+            width calc(100% - 30px)
+
+@import "partials/header.styl"
+@import "partials/index-intro.styl"
+@import "partials/inner-intro.styl"
+@import "partials/breadcrumbs.styl"
+@import "partials/images-slider.styl"
+@import "partials/prices.styl"
+@import "partials/baths.styl"
+@import "partials/drop-menu.styl"
+@import "partials/services.styl"
+@import "partials/advantages.styl"
+@import "partials/events.styl"
+@import "partials/articles.styl"
+@import "partials/gallery.styl"
+@import "partials/contacts.styl"
+@import "partials/workers.styl"
+@import "partials/footer.styl"
+
+
+

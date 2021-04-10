@@ -1,0 +1,136 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1")
+        link(rel="stylesheet" href="style/normalize.css" type="text/css")
+        link(rel="stylesheet" href="style/swiper.css" type="text/css")
+        link(rel="stylesheet" href="style/choices.css" type="text/css")
+        link(rel="stylesheet" href="style/main.css" type="text/css")
+        title Чапаевские Бани
+    body.body
+        //= partials/header.pug
+        main.main
+            section.inner-intro
+                div.container
+                    div.inner-intro__breadcrumbs
+                        div.breadcrumbs
+                            ul.breadcrumbs__list
+                                li.breadcrumbs__item
+                                    a.breadcrumbs__link(href="")
+                                        |Главная
+                    h1.common__h1-heading.inner-intro__heading
+                        |Услуги
+            section.services.services--paddings
+                div.container
+                    ul.services__list
+                        li.services__item
+                            div.service-preview.service-preview--with-image
+                                a.service-preview__link(href="")
+                                    img.service-preview__image(src="images/media/service-image-01.jpg", alt="")
+                                    div.service-preview__info
+                                        span.service-preview__heading
+                                            |Традиционный тайский массаж
+                                        div.service-preview__description
+                                            p
+                                                |Уникальная методика с применением пассивных растяжек и глубокого проминания мышц.
+                                        span.service-preview__price
+                                            |3000 р
+                                            span.service-preview__duration
+                                                |60 минут
+                        li.services__item
+                            div.service-preview.service-preview--with-image
+                                a.service-preview__link(href="")
+                                    img.service-preview__image(src="images/media/service-image-02.jpg", alt="")
+                                    div.service-preview__info
+                                        span.service-preview__heading
+                                            |Массаж головы
+                                        div.service-preview__description
+                                            p
+                                                |Массаж стимулирует рост волос, улучшает их состояние и уменьшает выпадение. В процессе массажа активизируется иммунитет, снимается тревожность и стресс, уходят головные боли.
+                                        span.service-preview__price
+                                            |900 р
+                                            span.service-preview__duration
+                                                |15 минут
+                        li.services__item
+                            div.service-preview.service-preview--with-image
+                                a.service-preview__link(href="")
+                                    img.service-preview__image(src="images/media/service-image-03.jpg", alt="")
+                                    div.service-preview__info
+                                        span.service-preview__heading
+                                            |Массаж головы и воротниковой зоны
+                                        span.service-preview__price
+                                            |1200 р
+                                            span.service-preview__duration
+                                                |30 минут
+                        li.services__item
+                            div.service-preview
+                                a.service-preview__link(href="")
+                                    div.service-preview__info
+                                        span.service-preview__heading
+                                            |Удвартана
+                                        div.service-preview__description
+                                            p
+                                                |Индийский травяной массаж, который не только очищает кожу, но и восстанавливает ее.
+                                        span.service-preview__price
+                                            |1000 р
+                                            span.service-preview__duration
+                                                |20 минут
+                        li.services__item
+                            div.service-preview.service-preview--with-image
+                                a.service-preview__link(href="")
+                                    img.service-preview__image(src="images/media/service-image-04.jpg", alt="")
+                                    div.service-preview__info
+                                        span.service-preview__heading
+                                            |Спортивный массаж
+                                        div.service-preview__description
+                                            p
+                                                |Спортивный массаж способен облегчить напряжение мышц, снизить плотность и спазмолитические сокращения тканей.
+                                        span.service-preview__price
+                                            |3000 р
+                                            span.service-preview__duration
+                                                |50 минут
+                        li.services__item
+                            div.service-preview
+                                a.service-preview__link(href="")
+                                    div.service-preview__info
+                                        span.service-preview__heading
+                                            |Массаж лица
+                                        div.service-preview__description
+                                            p
+                                                |Данная процедура позволяет надолго предотвратить появление возрастных изменений, поддерживает тонус кожи.
+                                        span.service-preview__price
+                                            |900 р
+                                            span.service-preview__duration
+                                                |15 минут
+                        li.services__item
+                            div.service-preview
+                                a.service-preview__link(href="")
+                                    div.service-preview__info
+                                        span.service-preview__heading
+                                            |Абхьянга
+                                        div.service-preview__description
+                                            p
+                                                |Индийский массаж с применением теплого масла.
+                                        span.service-preview__price
+                                            |3000 р
+                                            span.service-preview__duration
+                                                |60 минут
+                        li.services__item
+                            div.service-preview.service-preview--with-image
+                                a.service-preview__link(href="")
+                                    img.service-preview__image(src="images/media/service-image-05.jpg", alt="")
+                                    div.service-preview__info
+                                        span.service-preview__heading
+                                            |Классический общий массаж
+                                        div.service-preview__description
+                                            p
+                                                |Такого рода массаж помогает расслабиться после длительных физических нагрузок, снять боль и улучшить кровообращение.
+                                        span.service-preview__price
+                                            |2300 р
+                                            span.service-preview__duration
+                                                |50 минут
+        //= partials/footer.pug
+        script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+        script(src="script/vendor.js" type="text/javascript")
+        script(src="script/script.js")

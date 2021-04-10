@@ -1,0 +1,150 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1")
+        link(rel="stylesheet" href="style/normalize.css" type="text/css")
+        link(rel="stylesheet" href="style/swiper.css" type="text/css")
+        link(rel="stylesheet" href="style/choices.css" type="text/css")
+        link(rel="stylesheet" href="style/main.css" type="text/css")
+        title Чапаевские Бани
+    body.body.body--black
+        //= partials/header.pug
+        main.main
+            section.inner-intro.inner-intro--fullscreen     
+                div.container
+                    div.inner-intro__breadcrumbs
+                        div.breadcrumbs
+                            ul.breadcrumbs__list
+                                li.breadcrumbs__item
+                                    a.breadcrumbs__link(href="")
+                                        |Главная
+                                li.breadcrumbs__item
+                                    a.breadcrumbs__link(href="")
+                                        |Бани
+                    h1.common__h1-heading.common__h1-heading--white.common__h1-heading--large.inner-intro__heading
+                        |Охотничья
+                    span.inner-intro__capacity
+                        |до 6 человек
+            section.bath
+                div.bath__background
+                    img.bath__background-image(src="images/media/bath-01-image-01.jpg", alt="")
+                div.bath__reserve
+                    div.bath__prices
+                        ul.bath__prices-list
+                            li.bath__prices-item
+                                span.bath__prices-hint
+                                    |с 08:00 до 16:00
+                                |от 1600 р/час
+                            li.bath__prices-item
+                                span.bath__prices-hint
+                                    |с 16:00 до 08:00
+                                |от 2800 р/час
+                    a.common__button-link.bath__reserve-button(href="")
+                        |Бронировать                
+                div.bath__details
+                    div.bath__details-group
+                        h3.bath__details-group-heading
+                            |О бане
+                        div.common__wysiwyg.common__wysiwyg--black.bath__details-group-description
+                            p
+                                |Уютная баня, топится исключительно березовыми дровами. В бане имеется гостевая комната с обеденной зоной, теле-радио аппаратура, место для отдыха, парная, помывочная (в помывочной душевая кабина и обливное ведро), сан-узел.
+                            p
+                                |Минимальное время бронирования – 2 часа.
+                    div.bath__details-group
+                        div.bath__images-slider
+                            div.images-slider.swiper-container.js-images-slider
+                                ul.images-slider__list.swiper-wrapper
+                                    li.images-slider__item.swiper-slide
+                                        img.images-slider__image(src="images/media/bath-01-image-02.jpg", alt="")
+                                    li.images-slider__item.swiper-slide
+                                        img.images-slider__image(src="images/media/bath-01-image-03.jpg", alt="")
+                                div.images-slider__arrows
+                                    span.images-slider__arrow.common__arrow.common__arrow--prev.common__arrow--black.js-images-slider-arrow-prev
+                                        |Назад
+                                    span.images-slider__arrow.common__arrow.common__arrow--next.common__arrow--black.js-images-slider-arrow-next
+                                        |Далее                    
+                    div.bath__details-group
+                        h3.bath__details-group-heading 
+                            |Cтоимость аренды включает
+                        div.common__wysiwyg.common__wysiwyg--black.bath__details-group-description
+                            p
+                                |Комплект белья (шапка, шампунь, тапочки, простынь) и процедура аромо-баня продолжительностью 15 минут.
+                    div.bath__details-group
+                        h3.bath__details-group-heading 
+                            |Дополнительные услуги
+                        div.bath__additional-prices
+                            div.prices
+                                ul.prices__list
+                                    li.prices__item
+                                        span.prices__hint
+                                            |Аренда халата
+                                        |150 руб / шт.
+                                    li.prices__item
+                                        span.prices__hint
+                                            |Аренда полотенца
+                                        |100 руб / шт.
+                                    li.prices__item
+                                        span.prices__hint
+                                            |Аренда простыни
+                                        |50 руб / шт.
+                                    li.prices__item
+                                        span.prices__hint
+                                            |Аренда тапочек
+                                        |70 руб / шт.
+                                    li.prices__item
+                                        span.prices__hint
+                                            |Розжиг камина (вторая топка)
+                                        |100 руб / шт.
+                                    li.prices__item
+                                        span.prices__hint
+                                            |Аренда зоны барбекю (в стоимость входит 3 кг. угля, решетка или шампура)
+                                        |300 руб
+                                    li.prices__item
+                                        span.prices__hint
+                                            |Плата за дополнительного гостя
+                                        |500 руб
+                    div.bath__details-group
+                        div.common__wysiwyg.common__wysiwyg--black.bath__details-group-description
+                            p
+                                |А еще мы предоставляем уникальные веники для парения и оздоровительные услуги первоклассных парильщиков и массажистов.
+                        div.bath__services
+                            div.services-slider.swiper-container.js-services-slider
+                                ul.services-slider__list.swiper-wrapper
+                                    li.services-slider__item.swiper-slide
+                                        div.service-preview.service-preview--with-image
+                                            a.service-preview__link(href="")
+                                                img.service-preview__image(src="images/media/service-image-01.jpg", alt="")
+                                                div.service-preview__info
+                                                    span.service-preview__heading
+                                                        |Традиционный тайский массаж
+                                                    div.service-preview__description
+                                                        p
+                                                            |Уникальная методика с применением пассивных растяжек и глубокого проминания мышц.
+                                                    span.service-preview__price
+                                                        |3000 р
+                                                        span.service-preview__duration
+                                                            |60 минут
+                                    li.services-slider__item.swiper-slide
+                                        div.service-preview.service-preview--with-image
+                                            a.service-preview__link(href="")
+                                                img.service-preview__image(src="images/media/service-image-02.jpg", alt="")
+                                                div.service-preview__info
+                                                    span.service-preview__heading
+                                                        |Массаж головы
+                                                    div.service-preview__description
+                                                        p
+                                                            |Массаж стимулирует рост волос, улучшает их состояние и уменьшает выпадение. В процессе массажа активизируется иммунитет, снимается тревожность и стресс, уходят головные боли.
+                                                    span.service-preview__price
+                                                        |900 р
+                                                        span.service-preview__duration
+                                                            |15 минут
+                                div.services-slider__arrows
+                                    span.services-slider__arrow.common__arrow.common__arrow--prev.common__arrow--black.js-services-slider-arrow-prev
+                                        |Назад
+                                    span.services-slider__arrow.common__arrow.common__arrow--next.common__arrow--black.js-services-slider-arrow-next
+                                        |Далее  
+        //= partials/footer.pug
+        script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+        script(src="script/vendor.js" type="text/javascript")
+        script(src="script/script.js")

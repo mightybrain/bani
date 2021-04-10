@@ -1,0 +1,39 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1")
+        link(rel="stylesheet" href="style/normalize.css" type="text/css")
+        link(rel="stylesheet" href="style/swiper.css" type="text/css")
+        link(rel="stylesheet" href="style/choices.css" type="text/css")
+        link(rel="stylesheet" href="style/main.css" type="text/css")
+        title Чапаевские Бани
+    body.body
+        //= partials/header.pug
+        main.main
+            section.inner-intro
+                div.container
+                    div.inner-intro__breadcrumbs
+                        div.breadcrumbs
+                            ul.breadcrumbs__list
+                                li.breadcrumbs__item
+                                    a.breadcrumbs__link(href="")
+                                        |Главная
+                    h1.common__h1-heading.inner-intro__heading
+                        |Контакты
+            section.contacts.contacts--paddings
+                div.container
+                    div.contacts__info
+                        div.contacts__description.common__description.common__description--black
+                            p
+                                |Комплекс «Чапаевские бани» расположен в Екатеринбурге на 9 километре Сибирского тракта на улице МОПРа, 1. Всего в 15 минутах от центра Екатеринбурга и в 10 от аэропорта.
+                        a.contacts__phone(href="")
+                            |+7-343-247-21-07
+                        div.contacts__description.common__description.common__description--black
+                            p
+                                |Комплекс работает круглосуточно, без выходных и перерывов.
+                    div.contacts__map.js-map
+        //= partials/footer.pug
+        script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+        script(src="script/vendor.js" type="text/javascript")
+        script(src="script/script.js")

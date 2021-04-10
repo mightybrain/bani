@@ -1,0 +1,623 @@
+.baths-slider
+    position relative
+    width 100%
+    background-color black
+    overflow hidden
+
+    &__arrows
+        @media phone
+            display none
+
+    &__arrow
+        position absolute
+        top 46px
+        @media laptop
+            top 26px
+
+        &--prev
+            left 0
+
+        &--next
+            right 0
+
+    &__drop-menu
+        position absolute
+        top 46px
+        left 50%
+        transform translateX(-50%)
+        z-index 2
+        @media laptop
+            top 26px
+
+    &__list
+        display flex
+        flex-wrap nowrap
+        height auto
+        margin 160px 0 80px 0
+        padding 0
+        list-style none
+        @media desktop-medium
+            margin 80px 0 20px -40px
+        @media tablet-landscape-medium
+            margin 80px 0 20px 0
+        @media tablet-portrait-large
+            margin 80px 0 52px 0
+
+    &__item
+        flex-shrink 0
+        width calc(100% - 280px)
+        @media desktop-medium
+            width calc(100% - 80px)
+        @media tablet-portrait-large
+            width calc(100% - 60px)
+        @media phone
+            width calc(100% - 30px)
+
+    &__links
+        display flex
+        justify-content center
+        margin auto 0 0 0
+        @media tablet-portrait-small
+            justify-content flex-start
+            width calc(100% - 60px)
+            margin auto auto 0 auto
+        @media phone
+            width calc(100% - 30px)
+
+    &__details-link,
+    &__brooms-link
+        @media tablet-portrait-small
+            display none
+
+.bath-slide
+    display flex
+    flex-wrap nowrap
+    justify-content space-between
+    align-items center
+    @media tablet-portrait-large
+        flex-direction column
+        align-items flex-start
+        padding 0 20px 0 0
+    @media phone
+        padding 0 15px 0 0
+
+    &__image-wrapper
+        position relative
+        z-index 0
+        width calc(50% - 30px)
+        height 660px
+        overflow hidden
+        background-color black
+        @media laptop
+            width calc(50% - 22px)
+            height 548px
+        @media tablet-portrait-large
+            width 100%
+            height auto
+            margin 0 0 40px 0
+            padding 50% 0 0 0
+
+        &::before,
+        &::after
+            content ""
+            position absolute
+            left 0
+            z-index 1
+            display block
+            width 100%
+            height 80px
+            background-color black
+            transition height .7s 0s ease
+            @media tablet-portrait-large
+                display none
+
+        &::before
+            top 0
+        
+        &::after
+            bottom 0
+
+    &__image
+        position absolute
+        top 50%
+        left 50%
+        transform translate(-50%, -50%)
+        display block
+        width 100%
+        height 100%
+        object-fit cover
+        opacity .65
+
+        &-curtain
+            position absolute
+            top 0
+            right 0
+            z-index 1
+            display block
+            width 50%
+            height 100%
+            background-color black
+            transition width .7s 0s ease
+            @media tablet-portrait-large
+                display none
+
+    &__info
+        width calc(50% - 30px)
+        padding 0 140px 0 0
+        @media laptop
+            width calc(50% - 22px)
+            padding 0 80px 0 0
+        @media tablet-portrait-large
+            width 100%
+        @media phone
+            padding 0
+
+    &__heading
+        position relative
+        left -50%
+        z-index 1
+        margin 0 0 12px 0
+        font-family "ArnoPro"
+        font-size 130px
+        line-height 134px
+        font-weight 300
+        color white
+        text-transform uppercase
+        letter-spacing 20px
+        @media laptop
+            font-size 110px
+            line-height 114px
+        @media tablet-portrait-large
+            position static
+            font-size 60px
+            line-height 64px
+            text-transform none
+            letter-spacing normal
+        @media phone
+            font-size 40px
+            line-height 44px
+        
+    &__link
+        color inherit
+        text-decoration none
+
+    &__capacity
+        display block
+        margin 0 0 40px 0
+        font-family "ArnoPro"
+        font-size 40px
+        line-height 44px
+        font-weight 300
+        color white
+        text-transform uppercase
+        letter-spacing 8px
+        @media laptop
+            font-size 30px
+            line-height 34px
+        @media tablet-portrait-small
+            text-transform none
+            letter-spacing normal
+        @media phone
+            font-size 26px
+            line-height 30px
+
+    &__description
+        max-width 440px
+        margin 0 0 48px 0
+        @media tablet-portrait-large
+            max-width 600px
+
+    &__prices
+        &-list
+            display flex
+            flex-wrap wrap
+            margin 0 0 -50px 0
+            padding 0
+            list-style none
+            @media laptop
+                margin 0 0 -40px 0
+            @media phone
+                margin 0 0 -30px 0
+
+        &-item
+            margin 0 48px 50px 0
+            font-family "ArnoPro"
+            font-size 38px
+            line-height 42px
+            font-weight 300
+            color white
+            @media laptop
+                margin 0 40px 40px 0
+                font-size 32px
+                line-height 36px
+            @media phone
+                margin 0 30px 30px 0
+                font-size 26px
+                line-height 30px
+
+        &-hint
+            display block
+            font-family "ArnoPro"
+            font-size 21px
+            line-height 27px
+            font-weight 300
+            color lightest-brown
+            @media laptop
+                font-size 18px
+                line-height 24px       
+
+.bath-slide.swiper-slide-active
+    & .bath-slide__image-wrapper::before,
+    & .bath-slide__image-wrapper::after
+        height 0
+
+    & .bath-slide__image-curtain
+        width 0
+
+.baths
+    position relative
+    padding 0 0 100px 0
+
+    &--index
+        padding 0
+        @media tablet-portrait-small
+            padding 0 0 80px 0
+            background-color black
+    
+    &__sidebar
+        position absolute
+        top 0
+        right 140px
+        width 260px
+        padding 65px 30px 60px 30px
+        background-color brown
+        text-align center
+        @media desktop-medium
+            right 80px
+            width 228px
+        @media tablet-landscape-medium
+            right 40px
+        @media tablet-portrait-large
+            display none
+
+        &-hint
+            display block
+            margin 0 0 11px 0
+            font-family "ArnoPro"
+            font-size 21px
+            line-height 27px
+            font-weight 300
+            color lightest-brown
+
+        &-list
+            display flex
+            flex-direction column
+            margin 0
+            padding 0
+            list-style none
+
+            &:not(:last-child)
+                margin 0 0 36px 0
+
+        &-item + &-item
+            margin 11px 0 0 0
+
+        &-button
+            padding 0
+            font-family "ArnoPro"
+            font-size 24px
+            line-height 28px
+            font-weight 300
+            color white
+            border none
+            border-bottom 1px dotted rgba(255 255 255 .25)
+            outline none
+            background none
+            cursor pointer
+            transition border-bottom .3s 0s ease
+
+            &:hover
+                border-bottom 1px dotted rgba(255 255 255 0)
+
+    &__list
+        display flex
+        flex-direction column
+        width calc(100% - 392px)
+        margin 0
+        padding 0
+        list-style none
+        @media desktop-medium
+            width calc(100% - 288px)
+        @media tablet-portrait-large
+            width 100%
+
+    &__item:not(:first-child)
+        margin 90px 0 0 0
+
+.baths__sidebar.js-stick-to-screen
+    position fixed
+
+.baths__sidebar.js-stick-to-bottom
+    top auto
+    bottom 0
+
+.bath-preview
+    display flex
+    flex-wrap wrap
+    justify-content space-between
+    @media tablet-portrait-small
+        flex-direction column
+
+    &__image-wrapper
+        position relative
+        width 100%
+        margin 0 0 54px 0
+        padding 47% 0 0 0
+        overflow hidden
+        @media tablet-portrait-large
+            margin 0 0 40px 0
+
+    &__image
+        position absolute
+        top 50%
+        left 50%
+        transform translate(-50%, -50%) scale(1)
+        display block
+        width 100%
+        height 100%
+        object-fit cover
+        transition transform 1.5s 0s ease
+
+        &:hover
+            transform translate(-50%, -50%) scale(1.1)
+
+    &__info
+        width calc(100% - 298px)
+        @media tablet-portrait-small
+            width 100%
+            margin 0 0 48px 0
+
+    &__reserve
+        display flex
+        flex-direction column
+        align-items center
+        width 260px
+        @media tablet-portrait-small
+            align-items flex-start
+            width 100%
+
+    &__link
+        color inherit
+        text-decoration none
+        outline none
+
+    &__capacity
+        display block
+        margin 2px 0 0 0
+        font-family "ArnoPro"
+        font-size 26px
+        line-height 34px
+        font-weight 300
+        color white
+
+    &__description
+        margin 27px 0 0 0
+
+    &__prices
+        margin 0 0 26px 0
+        text-align center
+        @media tablet-portrait-small
+            text-align left
+
+        &-list
+            display flex
+            flex-direction column
+            align-items center
+            margin 0 0 -22px 0
+            padding 0
+            list-style none
+            @media tablet-portrait-small
+                flex-direction row
+                flex-wrap wrap
+                margin 0 0 -40px 0
+            @media phone
+                margin 0 0 -30px 0
+
+        &-item
+            display flex
+            flex-direction column
+            margin 0 0 22px 0
+            font-family "ArnoPro"
+            font-size 38px
+            line-height 42px
+            font-weight 300
+            color white
+            @media laptop
+                font-size 32px
+                line-height 36px
+            @media tablet-portrait-small
+                margin 0 40px 40px 0
+            @media phone
+                margin 0 30px 30px 0
+                font-size 26px
+                line-height 30px
+
+        &-hint
+            font-size 21px
+            line-height 27px
+            color lightest-brown
+            @media laptop
+                font-size 18px
+                line-height 24px
+        
+.bath
+    position relative
+    display flex
+    flex-direction row-reverse
+    flex-wrap nowrap
+    align-items flex-start
+    @media tablet-portrait-large
+        flex-direction column
+        overflow hidden
+
+    &__background
+        position fixed
+        top 0
+        left 0
+        width 100%
+        height 100vh
+        overflow hidden
+        background-color black
+
+        &::after
+            content ""
+            position absolute
+            bottom 0
+            left 0
+            display block
+            width 100%
+            height 65%
+            background linear-gradient(to top, black, rgba(45, 39, 39, 0))
+
+        &-image
+            position absolute
+            top 50%
+            left 50%
+            transform translate(-50%, -50%)
+            display block
+            width 100%
+            height 100%
+            object-fit cover
+            opacity .75
+
+    &__details
+        flex-grow 1
+        position relative
+        width calc(100% - 540px)
+        padding 75px 140px 80px 140px
+        background-color lightest-gray
+        @media desktop-medium
+            padding 75px 80px 80px 80px
+        @media tablet-landscape-medium
+            padding 75px 40px 80px 40px
+        @media tablet-portrait-large
+            width 100%
+            padding 75px 30px 80px 30px
+        @media phone
+            padding 75px 15px 80px 15px
+
+        &-group
+            &:not(:last-child)
+                margin 0 0 72px 0
+
+            &-heading
+                margin 0 0 23px 0
+                font-family "ArnoPro"
+                font-size 46px
+                line-height 50px
+                font-weight 300
+                color black
+                @media laptop
+                    font-size 36px
+                    line-height 40px
+                    @media phone
+                        font-size 30px
+                        line-height 34px
+
+    &__images-slider,
+    &__services
+        width calc(100% + 140px)
+        overflow hidden
+        @media desktop-medium
+            width calc(100% + 80px)
+        @media tablet-landscape-medium
+            width calc(100% + 40px)
+        @media tablet-portrait-large
+            width calc(100% + 60px)
+            margin 0 0 0 -30px
+            padding 0 0 0 30px
+        @media phone
+            width calc(100% + 30px)
+            margin 0 0 0 -15px
+            padding 0 15px
+
+    &__reserve
+        position relative
+        z-index 1
+        transform translateY(-100%)
+        display flex
+        flex-direction column
+        align-items center
+        padding 0 140px 90px 140px
+        @media desktop-medium
+            padding 0 80px 90px 80px
+        @media tablet-landscape-medium
+            padding 0 40px 80px 40px
+        @media tablet-portrait-large
+            transform none
+            flex-direction row
+            width 100%
+            padding 80px 30px 0 30px
+            background-color lightest-gray
+        @media tablet-portrait-small
+            flex-direction column
+            align-items flex-start
+        @media phone
+            padding 80px 15px 0 15px
+
+    &__prices
+        margin 0 0 27px 0
+        text-align center
+        @media tablet-portrait-large
+            text-align left
+            margin 0
+        @media tablet-portrait-small
+            margin 0 0 27px 0
+
+        &-list
+            display flex
+            flex-direction column
+            align-items center
+            margin 0 0 -23px 0
+            padding 0
+            list-style none
+            @media tablet-portrait-large
+                flex-direction row
+                margin 0 0 -40px 0
+            @media phone
+                margin 0 0 -30px 0
+
+        &-item
+            display flex
+            flex-direction column
+            margin 0 0 23px 0
+            font-family "ArnoPro"
+            font-size 36px
+            line-height 40px
+            font-weight 300
+            color white
+            @media laptop
+                font-size 32px
+                line-height 36px
+            @media tablet-portrait-large
+                margin 0 40px 40px 0
+                color black
+            @media phone
+                margin 0 30px 30px 0
+                font-size 26px
+                line-height 30px
+
+        &-hint
+            font-size 21px
+            line-height 27px
+            color gray
+            @media laptop
+                font-size 18px
+                line-height 24px
+
+.bath__details-group-description + .bath__services
+    margin 42px 0 0 0
+    @media tablet-portrait-large
+        margin 42px 0 0 -30px
+    @media phone
+        margin 42px 0 0 -15px

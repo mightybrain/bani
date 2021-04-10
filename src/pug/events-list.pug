@@ -1,0 +1,119 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1")
+        link(rel="stylesheet" href="style/normalize.css" type="text/css")
+        link(rel="stylesheet" href="style/swiper.css" type="text/css")
+        link(rel="stylesheet" href="style/choices.css" type="text/css")
+        link(rel="stylesheet" href="style/main.css" type="text/css")
+        title Чапаевские Бани
+    body.body
+        //= partials/header.pug
+        main.main
+            section.inner-intro
+                div.container
+                    div.inner-intro__breadcrumbs
+                        div.breadcrumbs
+                            ul.breadcrumbs__list
+                                li.breadcrumbs__item
+                                    a.breadcrumbs__link(href="")
+                                        |Главная
+                    h1.common__h1-heading.inner-intro__heading
+                        |Мероприятия
+            section.articles.articles--paddings
+                div.container
+                    ul.articles__list
+                        li.articles__item
+                            div.article-preview.article-preview--with-image
+                                a.article-preview__link(href="")
+                                    img.article-preview__image(src="images/media/event-01-image-01.jpg", alt="")
+                                    div.article-preview__info
+                                        span.article-preview__date
+                                            |14/02
+                                        span.article-preview__heading
+                                                |Отмечаем день всех влюбленных
+                                        div.article-preview__description
+                                            p
+                                                |Небольшой описательный текст для мероприятия.
+                        li.articles__item
+                            div.article-preview.article-preview--with-image
+                                a.article-preview__link(href="")
+                                    img.article-preview__image(src="images/media/event-02-image-01.jpg", alt="")
+                                    div.article-preview__info
+                                        span.article-preview__date
+                                            |22/02
+                                        span.article-preview__heading
+                                                |Провожаем зиму
+                        li.articles__item
+                            div.article-preview
+                                a.article-preview__link(href="")
+                                    div.article-preview__info
+                                        span.article-preview__date
+                                            |08/03
+                                        span.article-preview__heading
+                                                |Поздравляем женщин
+                                        div.article-preview__description
+                                            p
+                                                |Небольшой описательный текст для мероприятия. Можно кратко описать программу или еще что-то. 
+                        li.articles__item
+                            div.article-preview.article-preview--with-image
+                                a.article-preview__link(href="")
+                                    img.article-preview__image(src="images/media/event-03-image-01.jpg", alt="")
+                                    div.article-preview__info
+                                        span.article-preview__date
+                                            |17/04
+                                        span.article-preview__heading
+                                            |Турнир по русскому бильярду среди гостей комплекса
+                                        div.article-preview__description
+                                            p
+                                                |Небольшой описательный текст для мероприятия. Можно кратко описать программу или еще что-то.
+                        li.articles__item
+                            div.article-preview
+                                a.article-preview__link(href="")
+                                    div.article-preview__info
+                                        span.article-preview__date
+                                            |09/05
+                                        span.article-preview__heading
+                                            |Празднуем день победы
+                        li.articles__item
+                            div.article-preview
+                                a.article-preview__link(href="")
+                                    div.article-preview__info
+                                        span.article-preview__date
+                                            |12/06
+                                        span.article-preview__heading
+                                            |Празднуем день России
+                                        div.article-preview__description
+                                            p
+                                                |Небольшой описательный текст для мероприятия. Можно кратко описать программу или еще что-то. Небольшой описательный текст для мероприятия. Можно кратко описать программу или еще что-то. 
+                        li.articles__item
+                            div.article-preview
+                                a.article-preview__link(href="")
+                                    div.article-preview__info
+                                        span.article-preview__date
+                                            |25/08
+                                        span.article-preview__heading
+                                            |Турнир по нардам среди гостей комплекса
+                        li.articles__item
+                            div.article-preview.article-preview--with-image
+                                a.article-preview__link(href="")
+                                    img.article-preview__image(src="images/media/event-04-image-01.jpg", alt="")
+                                    div.article-preview__info
+                                        span.article-preview__date
+                                            |01/12
+                                        span.article-preview__heading
+                                            |Встречаем зиму
+                        li.articles__item
+                            div.article-preview.article-preview--with-image
+                                a.article-preview__link(href="")
+                                    img.article-preview__image(src="images/media/event-05-image-01.jpg", alt="")
+                                    div.article-preview__info
+                                        span.article-preview__date
+                                            |07/01
+                                        span.article-preview__heading
+                                            |Съезжаем со склона
+        //= partials/footer.pug
+        script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+        script(src="script/vendor.js" type="text/javascript")
+        script(src="script/script.js")

@@ -1,0 +1,167 @@
+.articles
+    &--paddings
+        padding 0 0 114px 0
+        
+    &__list
+        display flex
+        flex-wrap wrap
+        width calc(100% + 38px)
+        margin 0 0 -38px -38px
+        padding 0
+        list-style none
+        @media laptop
+            width calc(100% + 20px)
+            margin 0 0 -20px -20px
+        @media tablet-portrait-large
+            justify-content center
+        @media phone
+            width 100%
+            margin 0 0 -15px 0
+
+    &__item
+        width calc(100% / 3 - 38px)
+        margin 0 0 38px 38px
+        @media laptop
+            width calc(100% / 3 - 20px)
+            margin 0 0 20px 20px
+        @media tablet-portrait-large
+            width calc(100% / 2 - 20px)
+            max-width 344px
+        @media phone
+            width 100%
+            margin 0 0 15px 0
+            max-width 290px
+
+.article-preview
+    position relative
+    width 100%
+    height 580px
+    background-color black
+    overflow hidden
+    @media laptop
+        height 480px
+    @media phone
+        height 420px
+
+    &__link
+        outline none
+        text-decoration none
+
+    &__info
+        position relative
+        display flex
+        flex-direction column
+        align-items center
+        justify-content center
+        height 100%
+        padding 38px 40px
+        text-align center
+        background-color lightest-gray
+        border 1px solid light-gray
+        @media phone
+            padding 18px 20px
+
+    &__date
+        position relative
+        font-family "ArnoPro"
+        font-size 42px
+        line-height 46px
+        font-weight 300
+        color black
+        @media laptop
+            font-size 36px
+            line-height 40px
+
+    &__heading
+        position relative
+        margin 6px 0 0 0
+        font-family "ArnoPro"
+        font-size 24px
+        line-height 28px
+        font-weight 300
+        color black
+
+    &__description
+        position relative
+        margin 25px 0 0 0
+        @media phone
+            display none
+
+        & p:not([class])
+            margin 0
+            font-family "HelveticaNeue"
+            font-size 16px
+            line-height 26px
+            font-weight 300
+            color black
+
+.article-preview--with-image
+    & .article-preview__image
+        position absolute
+        top 50%
+        left 50%
+        transform translate(-50%, -50%) scale(1)
+        display block
+        width 101%
+        height 101%
+        object-fit cover
+        opacity .75
+        transition transform 1.5s 0s ease
+
+    & .article-preview__info
+        align-items flex-start
+        justify-content flex-end
+        text-align left
+        border none
+        background none
+        overflow hidden
+
+        &::before
+            content ""
+            position absolute
+            bottom 0
+            left 0
+            display block
+            width 100%
+            height 50%
+            background linear-gradient(to top, black, rgba(45, 39, 39, 0))
+
+    & .article-preview__date,
+    & .article-preview__heading
+        color white
+
+    & .article-preview__link
+        color white
+        border-bottom 1px solid rgba(255, 255, 255, .25)
+
+    & .article-preview__description p:not([class])
+        color white
+
+    &:hover .article-preview__image
+        transform translate(-50%, -50%) scale(1.1)
+
+.article
+    padding 0 0 114px 0
+
+    &__buy-ticket
+        display flex
+        flex-wrap nowrap
+        justify-content space-between
+        align-items center
+        margin 72px 0 0 0
+        @media phone
+            flex-direction column
+            align-items flex-start
+
+    &__price
+        font-family "ArnoPro"
+        font-size 36px
+        line-height 40px
+        font-weight 300
+        color black
+        @media laptop
+            font-size 32px
+            line-height 36px
+        @media phone
+            display block
+            margin 0 0 24px 0
